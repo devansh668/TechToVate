@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -9,6 +10,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.npm-cache/
 
 # testing
 /coverage
@@ -39,3 +41,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# server specific
+public/uploads/
+server/logs/
+server/mongodb-data/
+dist/uploads/
