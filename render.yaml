@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: wanderlust-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: "*" # The Next.js frontend calls this server-side so CORS isn't strictly required, but * is safe for a public API if accessed from client
+
+  - type: web
+    name: wanderlust-frontend
+    env: node
+    # The frontend is located at the root, so no rootDir is required.
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: NODE_ENV
+        value: production
+      - key: BACKEND_URL
+        fromService:
+          type: web
+          name: wanderlust-backend
+          envVarKey: RENDER_EXTERNAL_URL

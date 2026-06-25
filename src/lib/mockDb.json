@@ -1,0 +1,45 @@
+{
+  "destinations": [
+    {
+      "_id": "dest_1",
+      "name": "Paris, France",
+      "location": "The city of lights",
+      "rating": 4.8,
+      "image": "/images/paris.png",
+      "description": "Experience the romantic streets, iconic Eiffel Tower, and world-class museums of France's capital.",
+      "price": 1299,
+      "featured": true
+    },
+    {
+      "_id": "dest_2",
+      "name": "Bali, Indonesia",
+      "location": "Island of the Gods",
+      "rating": 4.7,
+      "image": "/images/bali.png",
+      "description": "Relax on tropical beaches, explore lush rice fields, and immerse yourself in the rich spiritual culture of Bali.",
+      "price": 899,
+      "featured": true
+    },
+    {
+      "_id": "dest_3",
+      "name": "Dubai, UAE",
+      "location": "Experience luxury",
+      "rating": 4.6,
+      "image": "/images/dubai.png",
+      "description": "Discover futuristic architecture, luxury shopping, desert safaris, and pristine beaches in the heart of the Emirates.",
+      "price": 1599,
+      "featured": true
+    },
+    {
+      "_id": "dest_4",
+      "name": "Interlaken, Switzerland",
+      "location": "Adventure awaits",
+      "rating": 4.9,
+      "image": "/images/interlaken.png",
+      "description": "Enjoy breathtaking Alpine views, crystal clear lakes, and year-round outdoor sports in Switzerland's adventure hub.",
+      "price": 1999,
+      "featured": true
+    }
+  ],
+  "enquiries": []
+}
