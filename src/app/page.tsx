@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import SearchWidget from '@/components/SearchWidget';
 import Destinations from '@/components/Destinations';
-import Packages from '@/components/Packages';
 import Footer from '@/components/Footer';
 import EnquiryModal from '@/components/EnquiryModal';
 import { Phone, Mail, MapPin, Landmark, ExternalLink, ChevronDown, ChevronUp, HelpCircle, ArrowRight } from 'lucide-react';
